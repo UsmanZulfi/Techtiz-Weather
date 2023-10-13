@@ -9,10 +9,17 @@ body {
   background-repeat: no-repeat;
   background-size: contain;
   min-height: 100vh;
-  background: linear-gradient(-35deg, #6d719f 0%, #97b8dd);
+  overflow: hidden;
+  
+  background: linear-gradient(-35deg, #27575d 0%, #7bd1d4);
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+@media screen and (max-width: 990px) {
+  body {
+    overflow: auto;
+  }
 }

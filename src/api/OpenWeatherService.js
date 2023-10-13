@@ -24,6 +24,8 @@ export async function fetchWeatherData(lat, lon) {
 
     const weatherResponse = await weatherPromise.json();
     const forcastResponse = await forcastPromise.json();
+    console.log(weatherResponse, "weatherResponse");
+    console.log(forcastResponse, "forcastResponse");
     return [weatherResponse, forcastResponse];
   } catch (error) {
     console.log(error);
